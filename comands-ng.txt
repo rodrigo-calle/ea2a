@@ -1,0 +1,9 @@
+ng g c pages/home
+
+8:58 PM
+ng g c pages/aboutus
+
+8:58 PM
+ng g c pages/contactus
+
+Set-ExecutionPolicy -Scope CurrentUser unrestricted
