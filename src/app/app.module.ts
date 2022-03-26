@@ -7,6 +7,8 @@ import { AboutusComponent } from './pages/aboutus/aboutus.component';
 import { ContactusComponent } from './pages/contactus/contactus.component';
 import { AppRoutingModule } from './app-routing.module';
 import { TeamComponent } from './pages/team/team.component';
+import { ReactiveFormsModule } from '@angular/forms';
+
 
 @NgModule({
   declarations: [
@@ -19,6 +21,7 @@ import { TeamComponent } from './pages/team/team.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
+    ReactiveFormsModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

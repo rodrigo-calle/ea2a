@@ -6,4 +6,31 @@
     adipisicing elit. Itaque fugiat deleniti
     molestias accusantium optio ipsum labore sint sed eaque quibusdam, quasi a vero minima. Facere officia tenetur dolorum sunt delectus.
   </p>
+  <div class="row">
+    <div class="col-6">
+      <form method="post" [formGroup]="contactusForm">
+        <div formGroupName="persona">
+          <div class="form-group">
+            <input type="text" formControlName="nombre" placeholder="Ingrese Nombre" class="form-control">
+          </div>
+          <div class="form-group">
+            <input type="text" formControlName="apellido" placeholder="Ingrese Apellido" class="form-control">
+          </div>
+        </div>
+        <div class="form-group">
+          <input type="email" formControlName="correo" placeholder="Ingrese Correo" class="form-control">
+        </div>
+        <div class="form-group">
+          <textarea placeholder="Ingrese mensaje" formControlName="mensaje" rows="3" class="form-control"></textarea>
+        </div>
+        <div class="form-group">
+          <button (click)="__onSubmit" type="btn btn-primary">Enviar Datos</button>
+        </div>
+      </form>
+    <!--   <p>Datos del formulario: {{ contactusForm.value | json }}</p> -->
+    </div>
+    <div class="col-6">
+      Aquí va el mapa
+    </div>
+  </div>
 </div>
