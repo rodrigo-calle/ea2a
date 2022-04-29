@@ -8,6 +8,8 @@ import { AboutusComponent } from "./pages/aboutus/aboutus.component";
 import { ContactusComponent } from "./pages/contactus/contactus.component";
 import { HomeComponent } from "./pages/home/home.component";
 import { TeamComponent } from "./pages/team/team.component";
+import { ProjectComponent } from "./pages/project/project.component";
+import { ApartmentComponent } from "./pages/apartment/apartment.component";
 
 const routes: Routes = [
   { path: '', component: HomeComponent },
@@ -15,6 +17,10 @@ const routes: Routes = [
   { path: 'aboutus', component: AboutusComponent },
   { path: 'contactus', component: ContactusComponent },
   { path: 'team', component: TeamComponent },
+  { path: 'project/:id', component: ProjectComponent },
+  { path: 'apartment/:idapartment', component: ApartmentComponent},
+  { path: 'apartment/:idproyecto/:iddepartamento', component: ApartmentComponent},
+
   //rutas protegidas
   { path: 'admin/project/new', component:ProjectNewComponent },
   { path: 'admin/project/list', component: ProjectListComponent},
